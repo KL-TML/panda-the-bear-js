@@ -72,3 +72,43 @@ d.disabled = true
 var d = document.querySelectorAll(".bio-info-value")
 d.forEach(function(item){
     item.innerText = ""})
+
+
+Panda Part 2
+1. removing time travel using jquery
+$("#time-travel").parent().remove();
+
+1. That drawing of Pikachu is really cute. Let’s duplicate it using cloneNode() and insert it at the bottom of the .portfolio-container using insertAdjacentHTML() or appendChild().
+
+var pikachu = document.querySelector('[title="Pikachu"]')
+var pika_clone = pikachu.cloneNode(false)
+var pika_bottom = pika_clone.appendChild(pikachu)
+for (var i = 0; i <= 10; i++){pika_bottom}
+
+2.
+var listItem = document.createElement('li');
+undefined
+listItem
+<li>​</li>​
+var leftSpan = document.createElement('span')
+undefined
+var lastUpdated = document.createTextNode('Page last updated on');
+undefined
+leftSpan.appendChild(lastUpdated)
+"Page last updated on"
+var rightSpan = document.createElement('span')
+undefined
+var date = Date();
+undefined
+var dateMessage = document.createTextNode(date);
+undefined
+rightSpan.appendChild(dateMessage);
+"Wed Dec 20 2017 23:28:12 GMT-0500 (EST)"
+var ul = document.querySelector('ul.bio-info');
+undefined
+leftSpan.className = 'bio-info-title'
+"bio-info-title"
+rightSpan.className = "bio-info-value bio-info-date";
+"bio-info-value bio-info-date"
+ul.appendChild(leftSpan); ul.appendChild(rightSpan);
+<span class=​"bio-info-value bio-info-date">​Wed Dec 20 2017 23:28:12 GMT-0500 (EST)​</span>​
